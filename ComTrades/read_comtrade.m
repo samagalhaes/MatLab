@@ -344,12 +344,11 @@ if No_Ch >= 1
             % Append the new item to the legend for this plot.
             legend_string = char(cfg_string{1,j}(2));
             if (i>1)
-                y = [y(1:end-1), legend_string]
+                y = [y(1:end-1), legend_string];
             else
                 y= [legend_string];
             end
             hlegend = legend(p{i,1},y);
-            set(hlegend);
         end
     end
 end
